@@ -1,3 +1,37 @@
 /****************************
     HEADER STYLE
 *****************************/
+.Header {
+    width: 1143px;
+    height: 73px;
+    display: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: $set-margin;
+    border-bottom: $set-border-bottom;
+    font-size: $size-small;
+    .link-header ul { 
+        @include reset-list;
+    }
+        li {
+            padding-left: 50px;
+        }
+        li:hover {
+            color: $hover-color;
+            cursor: pointer;
+        }
+        span img{
+            display: inline-block;
+            vertical-align: middle;
+            height: 19px;
+            padding-right: 5px;
+        }
+}       
+.img-btn {
+    @include btn(#fff);
+    &:hover {
+        background: $hover-color;
+        color: #fff;
+    }
+}
