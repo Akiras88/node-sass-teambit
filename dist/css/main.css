@@ -1,10 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;
-
-700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap);
 /************************
     VARIABLES           *
 ************************/
-
 /***************************
     GENERAL SETTINGS       *
 ***************************/
@@ -45,7 +42,6 @@ p {
   cursor: pointer;
   color: #fff;
 }
-
 .principal-btn-1:hover {
   background: #233569;
 }
@@ -65,7 +61,6 @@ span img {
   cursor: pointer;
   color: #fff;
 }
-
 .principal-btn-2:hover {
   background: #233569;
 }
@@ -80,7 +75,6 @@ span img {
 /****************************
     HEADER STYLE
 *****************************/
-
 .Header {
   width: 1143px;
   height: 73px;
@@ -93,24 +87,20 @@ span img {
   border-bottom: 1px solid #58402c;
   font-size: 14px;
 }
-
 .Header .link-header ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
 .Header li {
   padding-left: 50px;
 }
-
 .Header li:hover {
   color: #30488f;
   cursor: pointer;
 }
-
-.Header span img {
+.Header .logo img {
   display: inline-block;
   vertical-align: middle;
   height: 19px;
@@ -123,7 +113,6 @@ span img {
   padding: 10px;
   background: #fff;
 }
-
 .img-btn:hover {
   background: #30488f;
   color: #fff;
@@ -143,7 +132,6 @@ span img {
   padding-top: 150px;
   max-width: calc(100%/2);
 }
-
 .left-jumb h2 {
   font-weight: 400;
 }
@@ -160,7 +148,6 @@ span img {
   color: #58402c;
   cursor: pointer;
 }
-
 .personal-adress:hover {
   color: #30488f;
 }
@@ -169,9 +156,73 @@ span img {
   max-width: calc(100%/2);
   padding-top: 100px;
 }
-
 .right-jumb img {
   max-height: 350px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffe7d2;
+}
 
+.fist-main {
+  margin-top: 55px;
+  height: calc(100%/2);
+  width: 708px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #58402c;
+  border-bottom: 1px solid #58402c;
+}
+
+.three-img {
+  display: flex;
+}
+.three-img span {
+  padding: 20px;
+}
+.three-img img {
+  height: 130px;
+}
+.three-img p {
+  font-size: 18px;
+}
+
+.rabbit {
+  height: 288px;
+  margin: 70px;
+}
+
+.second-main {
+  margin-top: 55px;
+  height: calc(100%/2);
+  width: 708px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #58402c;
+  border-bottom: 1px solid #58402c;
+}
+
+.three-img {
+  display: flex;
+}
+.three-img span {
+  padding: 20px;
+}
+.three-img img {
+  height: 130px;
+}
+.three-img p {
+  font-size: 18px;
+}
+
+.rabbit {
+  height: 288px;
+  margin: 70px;
+}
