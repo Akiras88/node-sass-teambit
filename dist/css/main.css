@@ -122,6 +122,7 @@ span img {
   display: flex;
   align-items: center;
   margin: 0 345px;
+  padding-bottom: 80px;
   height: 655px;
   max-height: 100%;
 }
@@ -225,4 +226,66 @@ main {
 .rabbit {
   height: 288px;
   margin: 70px;
+}
+
+.second-main {
+  border-bottom: none;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-1 {
+  display: flex;
+  padding-top: 60px;
+  width: 80%;
+}
+.page-1 img {
+  height: 470px;
+  width: calc(100%/2);
+}
+.page-1 .feedback {
+  display: flex;
+  flex-direction: column;
+}
+.page-1 span {
+  color: #30488f;
+  cursor: pointer;
+  font-size: 22px;
+}
+.page-1:hover {
+  color: #30488f;
+}
+.page-1 .img-right {
+  height: 200px;
+  padding: 40px 60px;
+}
+
+.page-2 {
+  display: flex;
+  padding-top: 60px;
+  width: 80%;
+}
+.page-2 img {
+  height: 470px;
+  width: calc(100%/2);
+}
+.page-2 .feedback {
+  display: flex;
+  flex-direction: column;
+}
+.page-2 span {
+  color: #30488f;
+  cursor: pointer;
+  font-size: 22px;
+}
+.page-2:hover {
+  color: #30488f;
+}
+.page-2 .img-right {
+  height: 200px;
+  padding: 40px 60px;
 }

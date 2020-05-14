@@ -1,0 +1,32 @@
+.pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@for $i from 1 through 2 {
+    .page-#{$i} {
+        display: flex;
+        padding-top: 60px;
+        width: 80%;
+        img {
+            height: 470px;
+            width: calc(100%/2);
+        }
+        .feedback {
+            display: flex;
+            flex-direction: column;           
+        }
+            span {
+                color: $secondary-color;
+                cursor: pointer;
+                font-size: 22px;
+            }
+            &:hover {
+                color: $hover-color;
+            }
+            .img-right {
+                height: 200px;
+                padding: 40px 60px;
+            }
+    }
+}
