@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    margin: $set-margin;
+    padding-top: $set-padding-footer;
+    .footer-left {
+        display: flex;
+        width: 30%;
+    }
+        img {
+            width: 150px;
+            height: 100px;
+            padding-right: 10px;
+        }
+        p {
+            font-size: $size-medium;
+        }
+            a {
+                text-decoration: none;
+                color: $secondary-color;
+            }
+}
+.footer-right {
+    display: flex;
+    .title{
+        font-size: $size-medium;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    li {
+        @include reset-list;
+        font-size: $size-small;
+        color: $principal-color;
+        padding-bottom: 15px;
+    }
+}
