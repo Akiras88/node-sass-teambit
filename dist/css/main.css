@@ -17,6 +17,66 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  font-size: 50px;
+  color: #58402c;
+}
+
+h2 {
+  font-size: 26px;
+  color: #58402c;
+}
+
+h3 {
+  font-size: 22px;
+  color: #58402c;
+}
+
+p {
+  font-size: 22px;
+  color: #58402c;
+}
+
+.principal-btn-1 {
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  padding: 10px;
+  background: #30488f;
+  cursor: pointer;
+  color: #fff;
+}
+
+.principal-btn-1:hover {
+  background: #233569;
+}
+
+span img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 19px;
+  padding-right: 5px;
+}
+
+.principal-btn-2 {
+  border: 1px solid #30488f;
+  border-radius: 7px;
+  padding: 10px;
+  background: #30488f;
+  cursor: pointer;
+  color: #fff;
+}
+
+.principal-btn-2:hover {
+  background: #233569;
+}
+
+span img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 19px;
+  padding-right: 5px;
+}
+
 /****************************
     HEADER STYLE
 *****************************/
@@ -24,8 +84,9 @@ body {
 .Header {
   width: 1143px;
   height: 73px;
-  display: fixed;
   display: flex;
+  position: fixed;
+  background: #fff;
   align-items: center;
   justify-content: space-between;
   margin: 0 345px;
@@ -66,6 +127,51 @@ body {
 .img-btn:hover {
   background: #30488f;
   color: #fff;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  margin: 0 345px;
+  height: 655px;
+  max-height: 100%;
+}
+
+.left-jumb {
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  max-width: calc(100%/2);
+}
+
+.left-jumb h2 {
+  font-weight: 400;
+}
+
+.double-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 70px 30px 10px;
+}
+
+.personal-adress {
+  font-size: 14px;
+  color: #58402c;
+  cursor: pointer;
+}
+
+.personal-adress:hover {
+  color: #30488f;
+}
+
+.right-jumb {
+  max-width: calc(100%/2);
+  padding-top: 100px;
+}
+
+.right-jumb img {
+  max-height: 350px;
 }
 
 

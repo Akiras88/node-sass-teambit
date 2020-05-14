@@ -24,3 +24,28 @@ body {
     padding: 10px;
     background: $color;
 }
+// titles and p
+$title: ('h1': 50px, 'h2': 26px, 'h3': 22px, 'p': 22px);
+@each $name, $size in $title {
+    #{$name}  {
+        font-size: $size;
+        color: $principal-color;
+    }
+}
+// botton
+@for $i from 1 through 2 {
+    .principal-btn-#{$i} {
+        @include btn($btn-color);
+        cursor: pointer;
+        color: #fff;
+        &:hover {
+            background: $btn-hover-color;
+        }
+    }
+    span img{
+        display: inline-block;
+        vertical-align: middle;
+        height: 19px;
+        padding-right: 5px;
+    }
+}

@@ -4,8 +4,9 @@
 .Header {
     width: 1143px;
     height: 73px;
-    display: fixed;
     display: flex;
+    position: fixed;
+    background: #fff;
     align-items: center;
     justify-content: space-between;
     margin: $set-margin;
