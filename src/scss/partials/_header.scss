@@ -12,6 +12,7 @@
     margin: $set-margin;
     border-bottom: $set-border-bottom;
     font-size: $size-small;
+    z-index: 1;
     .link-header ul { 
         @include reset-list;
     }
