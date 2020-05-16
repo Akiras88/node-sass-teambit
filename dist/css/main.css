@@ -532,3 +532,16 @@ footer a {
     width: 30%;
   }
 }
+/****************************
+    FIXED CHAT              *
+****************************/
+.fixed-chat img {
+  height: 35px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #30488f;
+  position: fixed;
+  right: 20px;
+  bottom: 30px;
+  cursor: pointer;
+}

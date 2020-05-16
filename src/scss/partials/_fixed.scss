@@ -1,0 +1,15 @@
+/****************************
+    FIXED CHAT              *
+****************************/
+.fixed-chat {
+    img {
+        height: 35px;
+        padding: 15px;
+        border-radius: 50%;
+        background: $secondary-color;
+        position: fixed;
+        right: 20px;
+        bottom: 30px;
+        cursor: pointer;
+    }
+}
