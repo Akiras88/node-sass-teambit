@@ -12,7 +12,7 @@
             margin: 0;
         }
     .principal-btn-2 {
-       margin: 30px;
+        margin: 30px;
     }
 }
 .blockquote {
@@ -52,4 +52,17 @@
                 font-size: 12px;
                 color: $principal-color;
             }     
+}
+
+/******************************
+    MEDIA QUERY               *
+******************************/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+    .title {
+        h1 {
+            text-align: center;
+        }
+    }
 }

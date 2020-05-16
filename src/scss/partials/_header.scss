@@ -2,14 +2,10 @@
     HEADER STYLE
 *****************************/
 .Header {
-    width: 1143px;
     height: 73px;
-    display: flex;
-    position: fixed;
     background: #fff;
     align-items: center;
     justify-content: space-between;
-    margin: $set-margin;
     border-bottom: $set-border-bottom;
     font-size: $size-small;
     z-index: 1;
@@ -35,5 +31,56 @@
     &:hover {
         background: $hover-color;
         color: #fff;
+    }
+}
+
+/******************************
+    MEDIA QUERY               *
+******************************/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+    .Header {
+        margin: 0;
+        display: flex;
+        position: fixed;
+        width: 100%;
+    }
+    fa-bars {
+            font-size: 30px;
+        }
+    .link-header {
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+// Medium devices (tablets, 768px and up, e.g. iPad Portrait) 
+@media (min-width: 768px) {
+    .Header {
+        i {
+            opacity: 0;
+            position: absolute;
+        }
+    }
+    .link-header {
+        opacity: 1;
+        position: relative;
+    }
+}
+
+// Large devices (desktops, 992px and up, e.g. iPad Landscape) 
+@media (min-width: 992px) {
+    .Header {
+        max-width: 900px;
+        margin: 0 50px;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up, PC/MacBook) 
+@media (min-width: 1200px) {
+    .Header {
+        max-width: 1143px;
+        margin: $set-margin;
     }
 }

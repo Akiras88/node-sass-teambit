@@ -1,16 +1,11 @@
 .jumbotron {
     display: flex;
     align-items: center;
-    margin: $set-margin;
-    padding-bottom: 80px;
-    height: 655px;
     max-height: 100%;
 }
 .left-jumb {
     display: flex;
     flex-direction: column;
-    padding-top: 150px;
-    max-width: calc(100%/2);
     h2 {
         font-weight: 400;
     }
@@ -19,7 +14,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 70px 30px 10px;
 }
 .personal-adress {
     font-size: $size-small;
@@ -29,10 +23,62 @@
         color: $hover-color;
     }
 }
-.right-jumb {
-    max-width: calc(100%/2);
-    padding-top: 100px;
-    img {
-        max-height: 350px;
+
+
+/******************************
+    MEDIA QUERY               *
+******************************/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+    .jumbotron {
+        flex-direction: column;
+    }
+        .left-jumb {
+            padding: 50px 20px 10px;
+            align-items: center;
+        }
+            .double-btn {
+                flex-direction: column;           
+            }
+        .right-jumb {
+            img {
+                max-height: 250px;
+            }
+        }
+}
+
+// Medium devices (tablets, 768px and up, e.g. iPad Portrait) 
+@media (min-width: 768px) {
+    .right-jumb {
+        img {
+            height: 400px;
+        }
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up, PC/MacBook) 
+@media (min-width: 1200px) {
+    .jumbotron {
+        height: 655px;
+        margin: 55px;
+        margin: $set-margin;
+        flex-direction: row;
+    }
+        .left-jumb {
+            padding-bottom: 80px;
+            padding-top: 150px;
+            max-width: calc(100%/2)
+        }
+    .double-btn {
+        flex-direction: row; 
+        margin: 20px 70px 30px 10px;          
+    }
+    .right-jumb {
+        max-width: calc(100%/2);
+        padding-top: 100px;
+        img {
+            max-height: 350px;
+        }
     }
 }

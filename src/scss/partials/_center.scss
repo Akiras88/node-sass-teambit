@@ -37,3 +37,31 @@ main {
 .second-main {
     border-bottom: none;
 }
+
+/******************************
+    MEDIA QUERY               *
+******************************/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+    main {
+        h2 {
+            width: 300px;
+        }
+    }
+    .three-img {
+        flex-direction: column;
+    }
+}
+
+// Medium devices (tablets, 768px and up, e.g. iPad Portrait) 
+@media (min-width: 768px) {
+    main {
+        h2 {
+            width: 100%;
+        }
+    }
+    .three-img {
+        flex-direction: row;
+    }
+}

@@ -1,16 +1,8 @@
 footer {
     display: flex;
-    margin: $set-margin;
-    padding-top: $set-padding-footer;
     .footer-left {
         display: flex;
-        width: 30%;
     }
-        img {
-            width: 150px;
-            height: 100px;
-            padding-right: 10px;
-        }
         p {
             font-size: $size-medium;
         }
@@ -21,6 +13,7 @@ footer {
 }
 .footer-right {
     display: flex;
+    //flex-wrap: wrap; //media
     .title{
         font-size: $size-medium;
         font-weight: 600;
@@ -31,5 +24,39 @@ footer {
         font-size: $size-small;
         color: $principal-color;
         padding-bottom: 15px;
+    }
+}
+
+/******************************
+    MEDIA QUERY               *
+******************************/
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 400px) {
+    footer {
+        flex-direction: column;
+        .footer-left {
+            flex-direction: column;
+            img {
+                height: 60px;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up, e.g. iPad Landscape) 
+@media (min-width: 992px) {
+    footer {
+        flex-direction: row;
+        margin: $set-margin;
+        padding-top: $set-padding-footer;
+    }
+    .footer-left {
+        flex-direction: row;
+        display: flex;
+        width: 30%;
     }
 }
